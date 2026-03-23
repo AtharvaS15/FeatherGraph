@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(248, 227, 160, 0.36), transparent 30%),
+    radial-gradient(circle at top right, rgba(227, 197, 114, 0.22), transparent 28%),
+    linear-gradient(180deg, #fff6da 0%, #f6e6b7 100%);
+  color: #3f2f0d;
+  font-family: "Inter", "Avenir Next", ui-sans-serif, system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(176, 141, 53, 0.25);
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(145, 117, 49, 0.45);
+  border-radius: 999px;
+}
+
+.shadow-legal {
+  box-shadow: 0 30px 70px rgba(104, 80, 24, 0.18);
+}
+
+.shadow-inner-soft {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.feather-sidebar {
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.5), rgba(255,255,255,0));
+}
+
+.legal-page {
+  background-image:
+    linear-gradient(to right, rgba(201, 82, 82, 0.18), rgba(201, 82, 82, 0.18)),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 31px,
+      rgba(130, 157, 210, 0.18) 31px,
+      rgba(130, 157, 210, 0.18) 32px
+    );
+  background-size: 2px 100%, 100% 32px;
+  background-position: 52px 0, 0 0;
+  background-repeat: no-repeat, repeat;
+}
+
+.graph-paper {
+  background-image:
+    linear-gradient(rgba(124, 104, 53, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 104, 53, 0.08) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+.prose-lite h1,
+.prose-lite h2,
+.prose-lite h3,
+.prose-lite h4 {
+  margin: 1.1rem 0 0.55rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #322508;
+}
+
+.prose-lite h1 { font-size: 2rem; }
+.prose-lite h2 { font-size: 1.45rem; }
+.prose-lite h3 { font-size: 1.15rem; }
+.prose-lite p,
+.prose-lite ul,
+.prose-lite ol,
+.prose-lite pre,
+.prose-lite blockquote {
+  margin: 0.8rem 0;
+}
+
+.prose-lite code {
+  background: rgba(70, 50, 7, 0.08);
+  border-radius: 0.5rem;
+  padding: 0.15rem 0.35rem;
+  font-size: 0.9em;
+}
+
+.prose-lite pre {
+  background: #3e2f0e;
+  color: #f9efcf;
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.prose-lite ul,
+.prose-lite ol {
+  padding-left: 1.2rem;
+}
+
+.prose-lite blockquote {
+  border-left: 3px solid rgba(176, 141, 53, 0.55);
+  padding-left: 1rem;
+  color: #6b5723;
+}
