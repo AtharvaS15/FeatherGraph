@@ -1,9 +1,8 @@
-# FeatherGraph
+# Connected Notes — Knowledge Graph Workspace
 
-FeatherGraph is a lightweight, local-first knowledge system designed for fast retrieval and relationship-aware organization. Instead of treating notes as isolated documents, FeatherGraph models notes as a graph of linked ideas, enabling structured organization, backlinks, and fast full-text search.
+Connected Notes is a local-first application for writing, searching, and connecting Markdown notes. It stores notes in SQLite, builds a navigable graph from directed note links, automatically surfaces backlinks, and supports full-text retrieval through SQLite FTS5.
 
-The system uses a FastAPI backend, SQLite with FTS5 search, and a React frontend with a clean markdown writing interface.
-
+The app combines a React/Vite frontend (Markdown editing, keyboard shortcuts, graph visualization) with a FastAPI REST backend (CRUD, tags, links) and SQLAlchemy data models.
 ---
 
 ## Design Goals
@@ -70,7 +69,7 @@ FeatherGraph/
 
 ---
 
-## Running FeatherGraph Locally
+## Running Connected Notes Locally
 
 ### 1. Start the backend
 
